@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="CommonButtonStyle.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <SolidColorBrush x:Key="Button.Enable.Foreground" Color="Red"/>
+    <SolidColorBrush x:Key="Button.Enable.Background" Color="White"/>
+    <SolidColorBrush x:Key="Button.Enable.Border" Color="Red"/>
+    <SolidColorBrush x:Key="Button.Disable.Foreground" Color="Gray"/>
+    <SolidColorBrush x:Key="Button.Disable.Background" Color="LightGray"/>
+    <SolidColorBrush x:Key="Button.Disable.Border" Color="Red"/>
+
+    <Style x:Key="CancelButtonStyle" TargetType="Button" BasedOn="{StaticResource CommonButtonStyle}">
+        <Setter Property="Foreground" Value="{StaticResource Button.Enable.Foreground}"/>
+        <Setter Property="Background" Value="{StaticResource Button.Enable.Background}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Button.Enable.Border}"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Foreground" Value="{StaticResource Button.Disable.Foreground}"/>
+                <Setter Property="Background" Value="{StaticResource Button.Disable.Background}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource Button.Disable.Border}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+</ResourceDictionary>
