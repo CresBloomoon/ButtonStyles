@@ -79,6 +79,9 @@
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Resources\Buttons\MaterialDesignButton.cs" />
     <Compile Include="Resources\Effects\RippleButton.cs" />
+    <Compile Include="Resources\Windows\MessageBoxEx.xaml.cs">
+      <DependentUpon>MessageBoxEx.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -104,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\Buttons\ExecuteButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Windows\MessageBoxEx.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
