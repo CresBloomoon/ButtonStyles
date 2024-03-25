@@ -11,9 +11,9 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Resources/Buttons/CommonButtonStyle.xaml"/>
                 <ResourceDictionary Source="/Resources/Buttons/ExecuteButtonStyle.xaml"/>
                 <ResourceDictionary Source="/Resources/Buttons/CancelButtonStyle.xaml"/>
+                <ResourceDictionary Source="/Resources/Textboxes/EquipmentNumberTextBoxStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -29,6 +29,22 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0"
+                 Grid.Column="0"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Height="40"
+                 Width="140"
+                 Tag="FullName"
+                 Style="{StaticResource TextBoxStyle}"
+                 />
+
+
+
+
+
+
 
         <Button
             Grid.Row="2"
