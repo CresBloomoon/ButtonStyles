@@ -82,6 +82,8 @@
     <Compile Include="Resources\Windows\MessageBoxEx.xaml.cs">
       <DependentUpon>MessageBoxEx.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Validations\DoubleValidationAttribute.cs" />
+    <Compile Include="Validations\IntValidationAttribute.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -107,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\Buttons\ExecuteButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Labels\ValidationLabelStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
